@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>My Dashboard</h1>
+    <nav>
+      <button class="nav-btn" data-section="todo">📝 To-Do</button>
+      <button class="nav-btn" data-section="quiz">🎮 Quiz</button>
+      <button class="nav-btn" data-section="timer">⏱ Timer</button>
+      <button class="nav-btn" data-section="notes">📒 Notes</button>
+      <button id="themeToggle">🌙 Toggle Theme</button>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section id="todo" class="active">
+      <h2>To-Do List</h2>
+      <div class="todo-container">
+        <input type="text" id="todoInput" placeholder="Enter a task">
+        <button id="addTodo">Add</button>
+        <ul id="todoList"></ul>
+      </div>
+    </section>
+
+    <section id="quiz">
+      <h2>Quiz</h2>
+      <div id="question">Question will appear here</div>
+      <div id="options"></div>
+      <button id="nextBtn">Next</button>
+      <p id="score">Score: 0</p>
+      <p id="highScore">HighScore: 0</p>
+    </section>
+
+    <section id="timer">
+      <h2>Stopwatch</h2>
+      <p id="timeDisplay">00:00:00</p>
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <section id="notes">
+      <h2>Notes</h2>
+      <button id="addNote">➕ Add Note</button>
+      <div id="notesContainer"></div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>📌 Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

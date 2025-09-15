@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  background: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #777;
+}
+
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+
+.todo-container {
+  margin-top: 10px;
+}
+
+#todoInput {
+  padding: 8px;
+  width: 200px;
+}
+
+#addTodo {
+  padding: 8px 12px;
+  margin-left: 5px;
+}
+
+#todoList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#todoList li {
+  background: #eee;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.note {
+  background: #fff9c4;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+body.dark {
+  background: #222;
+  color: #f4f4f9;
+}
+
+body.dark header,
+body.dark footer {
+  background: #111;
+}
+
+body.dark nav button {
+  background: #222;
+  color: #f4f4f9;
+}
+
+body.dark nav button:hover {
+  background: #444;
+}
